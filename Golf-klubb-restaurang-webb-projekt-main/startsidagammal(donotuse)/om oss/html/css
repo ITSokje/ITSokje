@@ -1,0 +1,26 @@
+
+Body{
+    background-color: #8C8453;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 1 kolumner */
+  grid-gap: 10px; /* Mellanrum mellan boxarna */
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #8C9CA3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Fast höjd för boxarna */
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Fördelar utrymmet mellan rubriken och "Om oss" */
+  align-items: center; /* Vertikal centrering */
+  padding: 20px;
+  background-color: lightgray;
+}

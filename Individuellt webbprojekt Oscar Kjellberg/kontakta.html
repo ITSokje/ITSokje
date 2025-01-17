@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/webbcss.css">
+    <title>Huvudsida</title>
+</head>
+<body>
+    <header>
+        <h1>Oscar Kjellberg</h1>
+        <h4>Webbprojekt inom internets historia och utveckling</h4>
+        <nav>
+            <ul class="ulleft">
+                <li><a href="index.html">Hem</a></li>
+            </ul>
+            <ul class="ulcenter">
+                <li><a href="internet.html">Internets utveckling inom teknik</a></li>
+                <li><a href="bjorn.html">Björn Eriksen, internets pionjär</a></li>
+                <li><a href="agila.html">Driva ett webbprojekt med agila metoder</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="dropbtn"><img class="icons" src="images/menus.png" alt="" style="width:30px; height: 20px;"></button>
+                <div class="dropdown-content">
+                    <a href="internet.html">Internets utveckling inom teknik</a>
+                    <a href="bjorn.html">Björn Eriksen, internets pionjär</a>
+                    <a href="agila.html">Driva ett webbprojekt med agila metoder</a>
+                </div>
+              </div>
+            <ul class="ulright">
+                <li><a href="ommig.html">Om mig</a></li>
+                <li><a class="active" href="kontakta.html">Kontakta mig</a></li>
+            </ul>
+            <ul class="ulrighticons">
+                <li><a href="ommig.html"><img class="icons" src="../images/information.png" alt="information" style="width:20px; height: 20px;"></a></li>
+                <li><a href="kontakta.html"><img class="icons" src="../images/contact.png" alt="contact" style="width:20px; height: 20px;"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+      <h1>Kontakta mig!</h1>
+        <form action="kontaktatack.html">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Förnamn:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname">
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Efternamn:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname">
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-25">
+              <label for="mail">Mejladress:</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="mail" name="mail">
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Meddelande:</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Skriv ditt meddelande..." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input class="skicka" type="submit" value="Skicka">
+          </div>
+        </form>
+      </div>
+    <footer>
+      <p>Skapat av Oscar Kjellberg, WEBD24JÖN</p>
+      <p>Individuellt webbprojektsarbete för kursen HTML och CSS med agila utvecklingsmetoder</p>
+      <p>Stockholm, 2024-09-26</p>
+    </footer>
+</body>
+</html>

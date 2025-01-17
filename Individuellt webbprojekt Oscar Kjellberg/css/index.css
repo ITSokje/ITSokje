@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Oswald&display=swap');
+
+
+html, body {
+  height: 100%;
+    font-family: 'Oswald';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    height: 200px;
+    background-color: black;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 5px;
+    white-space: nowrap;
+
+
+}
+
+nav {
+
+    margin: 0;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.ulleft {
+    list-style-type: none;
+    justify-content: flex-start;
+    overflow: hidden;
+    display: flex;
+}
+
+.ulcenter {
+    list-style-type: none;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.dropdown {
+    display: none;
+}
+
+.ulright {
+    list-style-type: none;
+    justify-content: flex-end;
+    overflow: hidden;
+    display: flex;
+}
+
+.ulrighticons {
+    display: none;
+}
+
+li {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+li a {
+    text-decoration: none;
+    display: inline;
+    text-align: center;
+    color: grey;  
+}
+
+li a:hover {
+    transition: 10ms;
+    color: white;
+}
+
+.active {
+    color: aqua;
+}
+
+.valkommen {
+  background-image: url(../images/IMG_0832.JPG);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+  
+}
+
+.valkommen-container {
+  margin: 0;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: fit-content;
+  max-width: 500px;
+  height: 100%;
+}
+
+.laddaner {
+  background-color: #000000;
+  width: fit-content;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+.wrapper {
+  flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.8);
+  color: white;
+  text-align: left;
+    }
+
+    footer p {
+      padding-left: 40px;
+      margin: 10px;
+    }
+
+
+
+@media screen and (max-width: 1100px) {
+    .ulright {
+      display: none;
+    }
+
+    .ulrighticons {
+        list-style: none;
+        padding: 0; 
+        display: flex; 
+        gap: 10px; 
+    }
+
+    .icons {
+        filter: invert(1) brightness(2);
+    }
+
+    header {
+      height: 200px;
+      background-color: black;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 5px;
+      white-space: nowrap;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    * {
+        font-family: 'Oswald';
+        margin: 0;
+    }
+    
+    .ulcenter {
+        display: none;
+    }
+    
+    .icons {
+        filter: invert(1) brightness(2);
+    }
+
+    header {
+      height: 140px;
+      background-color: black;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 5px;
+      white-space: nowrap;
+    }
+
+    .dropbtn {
+        background-color: #000000;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+  
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        backdrop-filter: blur(4px);
+        background-color: rgba(128, 128, 128, 0.8);
+        width: 1000px; 
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        left: 50%; 
+        transform: translateX(-50%); 
+        top: 100%;
+    }
+      
+      .dropdown-content a  {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        backdrop-filter: blur(8px);
+    }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+        justify-content: center;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #000000;
+      }
+
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 10px;
+  }
+}
