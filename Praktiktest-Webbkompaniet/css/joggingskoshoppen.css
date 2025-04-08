@@ -1,0 +1,303 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #444;
+}
+
+.navbar {
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+.top-navigering {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logga {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+
+.nav-länk {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-länk a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+    
+}
+
+.nav-länk a:hover {
+    color: #0066cc;
+}
+
+.sökfält{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 500px;
+}
+
+.sökfält input {
+    text-align: center;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+}
+
+
+.huvud-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.produkt-sektion {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.produkt-bilder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.produkt-bild {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.produkt-bild img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.produkt-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.produkt-titel {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.produkt-undertext {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.produkt-beskrivning {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.betyg {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.stjärnor {
+    color: gold;
+    margin-right: 10px;
+}
+
+.pris {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.färg-val {
+    margin-bottom: 20px;
+}
+
+.färg-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.färg-box {
+    height: 80px;
+    width: 100px;
+    
+    border: 1px solid #ddd;
+    text-align: center;
+    
+    cursor: pointer;
+
+}
+
+.färg-box-vald {
+    height: 80px;
+    width: 100px;
+    border: 3px solid #000000;
+    text-align: center;
+    cursor: pointer;
+
+}
+.färg-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+
+}
+.färg-box-vald img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+.storlek {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.storlek-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.storlek-box {
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.storlek-box:hover {
+    background-color: #f0f0f0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.beskrivning-container {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.beskrivning-toggle {
+    display: none;
+}
+
+.beskrivning-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+
+.beskrivning-header::after {
+    content: "+";
+    font-size: 24px;
+    transition: transform 0.8s ease;
+}
+
+.beskrivning-toggle:checked + .beskrivning-header::after {
+    transform: rotate(45deg);
+}
+
+.beskrivning-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.8s ease, padding 0.8s ease;
+}
+
+.beskrivning-toggle:checked ~ .beskrivning-content {
+    max-height: 1000px;
+    padding: 15px 20px;
+}
+
+.beskrivning-text {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.beskrivning-list {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.beskrivning-list li {
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
